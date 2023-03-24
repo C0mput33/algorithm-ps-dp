@@ -3,8 +3,8 @@
 #include<algorithm>
 using namespace std;
 long long dp[10001];
-const long long mod = 1000000007;
-long long r(int n)
+const long long mod = 1000000007; //결과값이 크기 때문에 long long 으로 선언
+long long r(int n) //dp[n]=3*dp[n-3]+4*dp[n-6]+6*dp[n-9]+8*dp[n-12]....
 {
 	if (n % 3 != 0)
 		return 0;
