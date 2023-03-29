@@ -17,6 +17,7 @@ int main()
 		cin >> i;
 		v.push_back(i);
 	}
+	//e.g 3원으로 만들때 그 전에 dp[3] 과 dp[0]+1 을 비교 최솟값을 구하므로 초기화는 큰값으로 그러나, d[0]=0으로 
 	for (int i = 0; i < v.size(); i++)
 	{
 		for (int j = v[i]; j <= k; j++)
